@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="25dp"
+            android:textSize="30sp"
+            />
+
+        <EditText
+            android:id="@+id/usernameTxt"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Username"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="25dp"/>
+
+        <EditText
+            android:id="@+id/passwordTxt"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="25dp"/>
+
+        <EditText
+            android:id="@+id/confPasswordTxt"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="25dp"/>
+
+        <RadioGroup
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="25dp">
+
+            <RadioButton
+                android:id="@+id/ownerRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle owner" />
+
+            <RadioButton
+                android:id="@+id/finderRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ride finder" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:text="Sign Up"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="25dp"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/signInInsteadBtn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:layout_marginStart="25dp"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/purple_700"
+            android:onClick="onClick"
+            />
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.EarnFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <EditText
+            android:id="@+id/firstnameTxt"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="First Name"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="18dp"/>
+
+        <EditText
+            android:id="@+id/lastnameTxt"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Last Name"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="18dp"/>
+
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="18dp"
+            android:ems="10"
+            android:hint="Phone no."
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="18dp"
+            android:ems="10"
+            android:hint=" Email"
+            android:inputType="textEmailAddress" />
+
+
+        <EditText
+            android:id="@+id/addressTxt"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Permanent Address"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="18dp"/>
+
+        <TextView
+            android:id="@+id/lblTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Vehicle Type"
+            android:layout_marginStart="18dp"
+            android:textSize="18dp"/>
+        <RadioGroup
+            android:id="@+id/radGroup"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="18dp">
+
+            <RadioButton
+                android:id="@+id/bikeRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_directions_bike_24"
+                android:text=" Bike  " />
+
+            <RadioButton
+                android:id="@+id/carRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_directions_car_24"
+                android:text=" Car  " />
+            <RadioButton
+                android:id="@+id/busRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_directions_bus_24"
+                android:text=" Bus  " />
+            <RadioButton
+                android:id="@+id/trainRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_train_24"
+                android:text=" Train  " />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/modelTxt"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Vehicle Model"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="18dp"/>
+        <EditText
+            android:id="@+id/numTxt"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Plate No."
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="18dp"/>
+
+        <CheckBox
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:textStyle="italic"
+            android:text="I have read and I agree to the Let Commute Inc. terms and condtions"
+            android:layout_marginStart="18dp"/>
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:text="Submit a Request"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="18dp"
+            android:onClick="onClick"/>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>

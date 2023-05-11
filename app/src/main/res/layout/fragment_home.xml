@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="map" />
+
+        <EditText
+            android:id="@+id/confPasswordTxt"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Enter destination"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="18dp"
+            />
+
+        <RadioGroup
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="18dp">
+
+            <RadioButton
+                android:id="@+id/bikeRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_directions_bike_24"
+                android:text=" Bike  " />
+
+            <RadioButton
+                android:id="@+id/carRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_directions_car_24"
+                android:text=" Car  " />
+            <RadioButton
+                android:id="@+id/busRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_directions_bus_24"
+                android:text=" Bus  " />
+            <RadioButton
+                android:id="@+id/trainRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_train_24"
+                android:text=" Train  " />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/moneyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="2dp"
+            android:drawableLeft="@drawable/baseline_monetization_on_24"
+            android:text="  250 (estimated) "
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/warningText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="25dp"
+            android:textStyle="italic"
+            android:text="Actual fares may vary depending on traffic conditions*"
+            android:textSize="13sp" />
+        <Button
+            android:id="@+id/findBtn"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:text="Find"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="20dp"
+            android:onClick="onClick"/>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

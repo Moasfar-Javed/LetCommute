@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Home"
+        android:id="@+id/navHome"
+        android:icon="@drawable/baseline_home_24"/>
+    <item
+        android:title="Earn"
+        android:id="@+id/navEarn"
+        android:icon="@drawable/baseline_attach_money_24"/>
+    <item
+        android:title="Track"
+        android:id="@+id/navTrack"
+        android:icon="@drawable/baseline_map_24"/>
+
+    <item
+        android:title="Save"
+        android:id="@+id/navSave"
+        android:icon="@drawable/baseline_compare_24"/>
+
+    <item
+        android:title="Sign Out"
+        android:id="@+id/navSignout"
+        android:icon="@drawable/baseline_logout_24"/>
+</menu>
